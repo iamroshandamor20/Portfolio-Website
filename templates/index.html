@@ -1,0 +1,255 @@
+{%load static%}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshan Damor | Portfolio</title>
+    <link rel="icon" href="{% static 'assets/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <!--Navbar Is Here-->
+        <div class="navbar">
+            <div class="logo">
+                <a href="#"><img src="{% static 'assets/Roshan Logo5.png'%}" alt="Roshan Logo" id="logo-image"></a>
+            </div>
+            <div class="navitems">
+                <a href="#">My Cirtificates</a>
+                <a href="#">My Startup</a>
+                <a href="#">My Youtube</a>
+            </div>
+            <div class="cvbtn">
+                <a href="#">
+                    <button class="btn">Download Resume</button>
+                </a>
+            </div>
+        </div>
+
+        <!--Home Page Is Here-->
+        <div class="home-container">
+            <div class="txt">
+                <p>HELLO ITS ME</p>
+                <h2 class="title">ROSHAN DAMOR</h2>
+                <P>I AM <span id="dev">PYTHON DEVELOPER</span></P>
+                <P>GREETINGS, ALL DIGITAL EXPLORERS ! I AM ROSHAN, A PASSIONATE AMD INNOVATIVE DEVELOPER DEDICATED TO CRAFTING IMMERSIVE DIGITAL EXPERIENCE, WELCOME TO MY ONLINE WORLD ...</P>
+                <div class="skills-container">
+                    <div class="skills-scroller">
+                        <img src="{% static 'assets/django.png' %}" alt="Skill 1">
+                        <img src="{% static 'assets/Mysql_logo.png' %}" alt="Skill 2">
+                        <img src="{% static 'assets/react.png' %}" alt="Skill 3">
+                        <img src="{% static 'assets/restapi.png' %}" alt="Skill 4">
+                        <img src="{% static 'assets/Scikit_learn_logo_small.svg.png' %}" alt="Skill 5">
+                        <img src="{% static 'assets/webrtc.png' %}" alt="Skill 6">
+                    </div>
+                </div>
+                <div class="mainbtns">
+                    <a href="#"><button class="btn">Video Resume</button></a>
+                    <a href="#"><button class="btn">Explore Personal Information</button></a>
+                </div>
+            </div>
+            <div class="heroimage">
+                <img src="{% static 'assets/man_7.png' %}" alt="Hero Image">
+
+            </div>
+            <div class="social">
+                <a href="#"><img src="{% static 'assets/social (1).png' %}" alt="GitHub"></a>
+                <a href="#"><img src="{% static 'assets/twitter.png' %}" alt="Twitter"></a>
+                <a href="#"><img src="{% static 'assets/linkedin.png' %}" alt="LinkedIn"></a>
+            </div>
+        </div>
+
+        <!--Project Page is from Here-->
+        <div class="project-container">
+            
+            <div class="project-cards">
+
+                <div class="project-detail-card">
+                    <h3 class="title">latest Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio non ea, quaerat laudantium libero tenetur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio doloremque aliquam eveniet doloribus laboriosam quas quos earum nam placeat consequuntur.</p>
+                    <button class="btn">Explore All Project</button>
+                </div>
+
+                <div class="project-main-card">
+                    <div class="image-project">
+                        <img src="{% static 'assets/Project 1.jpg' %}" alt="Project Image">
+                    </div>
+                    <div class="details-project">
+                        <h4>E-Commerce Website</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat impedit, labore quaerat tempore unde nesciunt omnis numquam provident consequuntur consequatur.</p>
+                        <div class="buttens">
+                            <a href="#"><button class="probtn">Live Preview</button></a>
+                            <a href="#"><button class="probtn">GitHub Link</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-main-card">
+                    <div class="image-project">
+                        <img src="{% static 'assets/Project 2.jpg' %}" alt="Project Image">
+                    </div>
+                    <div class="details-project">
+                        <h4>AI ML Traffic Mangment</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat impedit, labore quaerat tempore unde nesciunt omnis numquam provident consequuntur consequatur.</p>
+                        <div class="buttens">
+                            <a href="#"><button class="probtn">Live Preview</button></a>
+                            <a href="#"><button class="probtn">GitHub Link</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-main-card">
+                    <div class="image-project">
+                        <img src="{% static 'assets/Project 3.png' %}" alt="Project Image">
+                    </div>
+                    <div class="details-project">
+                        <h4>Portfolio Site Project</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat impedit, labore quaerat tempore unde nesciunt omnis numquam provident consequuntur consequatur.</p>
+                        <div class="buttens">
+                            <a href="#"><button class="probtn">Live Preview</button></a>
+                            <a href="#"><button class="probtn">GitHub Link</button></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Experience Page Is Here-->
+        
+        <div class="exp-container">
+            <div class="title">
+                <h2>Experience Section</h2>
+            </div>
+            <div class="exp-cards">
+                <div class="exp-card">
+                    <div class="detail">
+                        <div class="compney">
+                            <div class="comney-img"><img src="{% static 'assets/social.png' %}" alt="Google"></div>
+                            <h2>Sr. Python Developer (AI-ML)</h2>
+                            <h3>15th Oct - 19th Nov</h3>
+                        </div>
+                        <div class="description">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus alias perspiciatis minus architecto modi quisquam commodi adipisci quo ullam nobis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam iusto laudantium, exercitationem deleniti necessitatibus quaerat? Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-card">
+                    <div class="detail">
+                        <div class="compney">
+                            <div class="comney-img"><img src="{% static 'assets/Amazon logo.png' %}" alt="Google"></div>
+                            <h2>Sr. Python Developer (AI-ML)</h2>
+                            <h3>15th Oct - 19th Nov</h3>
+                        </div>
+                        <div class="description">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus alias perspiciatis minus architecto modi quisquam commodi adipisci quo ullam nobis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam iusto laudantium, exercitationem deleniti necessitatibus quaerat? Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Blogs Page is Here-->
+        <div class="project-container">
+            
+            <div class="project-cards">
+
+                <div class="project-detail-card">
+                    <h3 class="title">latest Blogs</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio non ea, quaerat laudantium libero tenetur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio doloremque aliquam eveniet doloribus laboriosam quas quos earum nam placeat consequuntur.</p>
+                    <a href="#"><button class="btn">Explore All Blogs</button></a>
+                </div>
+
+                <div class="project-main-card">
+                    <div class="image-project">
+                        <img src="{% static 'assets/Project 1.jpg' %}" alt="Project Image">
+                    </div>
+                    <div class="details-project">
+                        <h4>E-Commerce Website : Using AI and Ml ...</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat impedit, labore quaerat tempore unde nesciunt omnis numquam provident....</p>
+                        <div class="buttens">
+                            <a href="#"><button class="probtn">Read More</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-main-card">
+                    <div class="image-project">
+                        <img src="{% static 'assets/Project 2.jpg' %}" alt="Project Image">
+                    </div>
+                    <div class="details-project">
+                        <h4>AI ML Traffic Mangment Systems feasiblity Report</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat impedit, labore quaerat tempore unde nesciunt omnis numquam provident....</p>
+                        <div class="buttens">
+                            <a href="#"><button class="probtn">Read More</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-main-card">
+                    <div class="image-project">
+                        <img src="{% static 'assets/Project 3.png' %}" alt="Project Image">
+                    </div>
+                    <div class="details-project">
+                        <h4>Portfolio Site Project is Now live with Kafka Server...</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat impedit, labore quaerat tempore numquam provident ....</p>
+                        <div class="buttens">
+                            <a href="#"><button class="probtn">Read More</button></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <!-- Contect Page Start From Here  -->
+         <div class="exp-container">
+
+            <div class="contect-page">
+                <div class="img-contect">
+                    <img src="{% static 'assets/contact-us.png' %}" alt="contect page image">
+                </div>
+                <div class="form-contect">
+                    <form action="#" method="post">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Type your message here..." rows="4" required></textarea>
+                        
+                        <button class="btn" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+         </div>
+
+         <!-- Footer is starting from here-->
+         <div class="project-container">
+            
+            <div class="project-cards">
+
+                <div class="footer-content">
+                    <p>&copy; 2024 Roshan Damor. All Rights Reserved.</p>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate.</p>
+                </div>
+
+                <div class="thankyou">
+                    <h2>Thankyou For Visiting My Site</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nemo et enim, voluptatum iste eaque molestiae blanditiis sequi fuga sed.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

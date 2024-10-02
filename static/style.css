@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+  
+body {
+    background-color: #101827;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.wrapper {
+    width: 1280px; /* Fixed width */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CSS for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.navitems {
+    display: flex;
+    gap: 30px;
+}
+
+.navitems a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navitems a:hover {
+    color: #f8c306;
+}
+
+/* CSS for the Hero Section */
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60vh; /* Increased height for better proportions */
+    position: relative;
+    width: 100%;
+}
+
+.txt {
+    max-width: 50%; /* Adjusted percentage for the fixed width */
+}
+
+.txt p:first-child {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 0;
+    color: #ffffff;
+}
+
+.txt h2 {
+    color: rgb(111, 188, 255);
+    font-size: 50px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight:900;
+}
+
+.txt p:nth-child(3) {
+    font-size: 22px;
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+#dev {
+    font-weight: 800;
+    color: #ffee00;
+}
+
+.txt p:nth-child(4) {
+    font-size: 14px;
+    margin: 20px 0;
+    line-height: 1.5;
+    color: #dbdbdb;
+}
+
+.txt a {
+    text-decoration: none;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #0d1a28;
+}
+
+/* CSS for Hero Image */
+.heroimage {
+    position: relative;
+}
+
+.heroimage img {
+    max-width: 600px; /* Adjusted size */
+    width: 100%;
+}
+
+/* CSS for Social Icons */
+.social {
+    position: fixed;
+    right: 10px;
+    bottom: 175px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 10;
+    padding-right: 15px;
+}
+
+.social a {
+    display: block;
+    text-align: center;
+    background: #0b111e;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+}
+
+.social a:hover {
+    background-color: #fff;
+}
+
+.social a img {
+    width: 25px;
+    filter: invert(1);
+}
+
+
+
+/* Experience Page Starts From Here......*/
+
+.exp-container {
+    width: 1280px;
+    margin-top: 100px;
+}
+.title {
+    color: aliceblue;
+    font-size: 50px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 25px;
+}
+.exp-card {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.compney {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Add this to space items apart */
+    width: 100%; /* Ensure the whole width is used */
+}
+
+.comney-img img {
+    width: 200px; /* Set a fixed width for the logos */
+    height: 100px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio without stretching */
+    margin-right: 25px;
+}
+
+.compney h2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-left: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.compney h3 {
+    color: #dfdfdf;
+    font-size: 25px;
+    margin-left: auto; /* This pushes the h3 to the end */
+    text-align: right;
+    font-weight: 200;
+}
+
+.description {
+    color: aliceblue;
+    font-size: 20px;
+    padding-top: 25px;
+    line-height: 1.2;
+    border-top: 2px solid #223d68;
+}
+
+/* Project Page Starts From Here*/
+
+.project-container {
+    width: 1280px;
+    margin-top: 100px;
+}
+
+.project-cards {
+    width: 100%;
+    background-color: #04234B;
+    border-radius: 25px;
+    padding: 68px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+    gap: 40px; /* Adds spacing between the cards */
+}
+
+.project-detail-card {
+    width: 550px;
+    height: 275px;
+    color: floralwhite;
+    padding-top: 26px;
+}
+
+.project-detail-card button {
+    margin-top: 20px;
+
+}
+
+.project-detail-card p {
+    line-height: 1.5;
+}
+.project-main-card {
+    width: 550px;
+    height: 275px;
+    border: 4px solid rgb(1, 55, 126);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 25px;
+    border-radius: 20px;
+}
+
+.details-project {
+    color: #ffffff;
+}
+
+.details-project h4 {
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.details-project p {
+    font-weight: 100;
+    margin-top: 15px;
+    color: #dbdbdb;
+}
+
+.image-project img {
+    width: 225px;
+    height: 225px;
+    border: 3px solid rgb(1, 55, 126);
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.probtn {
+    padding: 8px 12px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.probtn:hover {
+    background-color: #fff;
+    color: #0d1a28;
+}
+
+.buttens {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Container for the skill section */
+.mainbtns {
+    margin-top: 25px;
+}
+
+.skills-container {
+    width: 625px;
+    height: 120px;
+    overflow: hidden; /* Hides the overflow outside of the container */
+    background-color: #04234B;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Scroller section */
+.skills-scroller {
+    display: flex;
+    gap: 20px;
+    animation: scroll 15s linear infinite; /* Scroll animation */
+}
+
+/* Style for skill images */
+.skills-scroller img {
+    width: 100px; /* Set a fixed width for each skill image */
+    height: 100px; /* Set a fixed height for each skill image */
+    margin: 0 15px; /* Add space between the images */
+    object-fit: contain;
+}
+
+/* Animation for scrolling */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%); /* Start from the right */
+    }
+    100% {
+        transform: translateX(-100%); /* End at the left */
+    }
+}
+
+.contect-page {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.img-contect {
+    width: 50%;
+    height: 500px;
+}
+
+.img-contect img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 25px;
+}
+
+.form-contect {
+    width: 50%; /* Takes the other half */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-contect form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contect label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.form-contect textarea {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 3px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: transparent; /* Makes the background transparent */
+    outline: none; /* Removes the black outline when clicked */
+    color: #ffffff;
+}
+
+.form-contect input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 3px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: transparent; /* Makes the background transparent */
+    outline: none; /* Removes the black outline when clicked */
+    color: #ffffff;
+}
+
+
+.footer-content {
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Horizontal padding */
+    color: whitesmoke;
+}
+
+.footer-links {
+    list-style-type: none; /* Remove bullet points */
+    padding: 15px;
+
+}
+
+.footer-links li {
+    display: inline; /* Display links inline */
+    margin: 0 15px; /* Spacing between links */
+
+}
+
+.footer-links a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer-links a:hover {
+    color: #fbff05; /* Change color on hover */
+}
+
+.thankyou {
+    color: #dbdbdb;
+    gap: 10px;
+}
+.thankyou h2 {
+    font-weight: 900;
+    color: #ffd000;
+    padding-bottom: 15px;
+}
