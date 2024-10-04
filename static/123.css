@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+  
+body {
+    background-color: #101827;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.wrapper {
+    width: 1280px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* CSS for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.navitems {
+    display: flex;
+    gap: 30px;
+}
+
+.navitems a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navitems a:hover {
+    color: #f8c306;
+}
+.btn {
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #0d1a28;
+}
+
+
+/*About Me Section Start from Here */
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.image img {
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 5px solid #072648;
+}
+
+
+.aboutme {
+    color: white;
+    max-width: 950px;
+    gap: 50px;
+    padding-right: 100px;
+}
+
+.aboutme h3 {
+    font-size: 75px;
+    margin-bottom: 25px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+
+#tagline {
+    font-size: 25px;
+    margin: 15px 0;
+    color: #ececec;
+    font-weight: bold;
+}
+
+#description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#aboutme {
+    padding: 10px 25px;
+    background-color: #072648;
+    border: 2px solid #fff;
+    color: rgb(190, 190, 190);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 20px;
+}
+
+#aboutme:hover {
+    background-color: #fff;
+    color: #072648;
+}
+
+/*Product Page Section Start from Here */
+
+.container-filled {
+    margin-top: 100px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 1280px;
+    background-color: #144880;
+    padding: 35px;
+}
+
+.book_header {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+}
+.book_header button {
+    margin-left: auto;
+}
+
+.book_header h2 {
+    color: #ececec;
+    font-size: 30px;
+
+}
+
+.my-container {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 25px;
+}
+.img-product {
+    width: 33%;
+    color: white;
+}
+
+.img-product p {
+    color: white;
+    padding: 10px;
+}
+
+
+.img-product img {
+    width: 100%;
+    border-radius: 20px;
+    border: 4px solid #072648;
+
+}
+
+.products-cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.products {
+    background-color: azure;
+}
+
+.product1 {
+    width: 25%;
+    
+}
+
+.imgs-product {
+    width: 100%;
+    border-radius: 20px;
+}
+.imgs-product img {
+    width: 100%;
+    border-radius: 20px;
+    border: 4px solid #072648;
+
+}
+
+.dtl-product h3 {
+    color:#dfdede;
+    padding: 10px;
+}
+
+.dtl-product button {
+    margin-left: 10px;
+}
+
+
+
+/*Education Page Section Start from Here */
+
+.edu-container {
+    margin-top: 100px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.title h2 {
+    color: #ececec;
+    font-size: 30px;
+}
+
+.edu-card {
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-start; /* Align to the top of the image */
+    padding: 30px 0px;
+}
+
+.detail {
+    display: flex;
+    align-items: flex-start; /* Align both the image and details to the top */
+}
+
+.institute-img {
+    width: 100%;
+    padding-right: 25px;
+    display: block;
+    position: relative; /* Enable absolute positioning inside this container */
+}
+
+.institute-img img {
+    width: 100%;
+    border-radius: 25px;
+    border: 4px solid whitesmoke;
+}
+
+.institute-img h4 {
+    position: absolute; /* Position the title over the image */
+    bottom: 10px;/* Adjust the distance from the top */
+    left: 10px; /* Adjust the distance from the left */
+    color: rgb(2, 96, 219);
+    padding: 5px 5px;
+    font-size: 18px;
+}
+.edu-details {
+    display: flex;
+    justify-content: space-between; /* Keeps the h3 and h4 spaced apart */
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.edu-details h3 {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 10px;
+}
+
+.edu-details h4 {
+    color: #dfdfdf;
+    font-size: 20px;
+    margin-left: auto; /* Pushes the h3 to the end */
+    text-align: right;
+    font-weight: 500;
+}
+
+.description {
+    color: aliceblue;
+    font-size: 20px;
+    padding-top: 25px;
+    line-height: 1.2;
+    border-top: 2px solid #223d68;
+    margin-left: 10px;
+}
+
+.project-container {
+    width: 1280px;
+    margin-top: 80px;
+    margin-bottom: 25px;
+
+}
+
+.project-cards {
+    width: 100%;
+    background-color: #04234B;
+    border-radius: 25px;
+    padding: 68px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+    gap: 40px; /* Adds spacing between the cards */
+}
+.form-contect {
+    width: 50%; /* Takes the other half */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-contect form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contect label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.form-contect textarea {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 3px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: transparent; /* Makes the background transparent */
+    outline: none; /* Removes the black outline when clicked */
+    color: #ffffff;
+}
+
+.form-contect input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 3px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: transparent; /* Makes the background transparent */
+    outline: none; /* Removes the black outline when clicked */
+    color: #ffffff;
+}
+
+
+.footer-content {
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Horizontal padding */
+    color: whitesmoke;
+}
+
+.footer-links {
+    list-style-type: none; /* Remove bullet points */
+    padding: 15px;
+
+}
+
+.footer-links li {
+    display: inline; /* Display links inline */
+    margin: 0 15px; /* Spacing between links */
+
+}
+
+.footer-links a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer-links a:hover {
+    color: #fbff05; /* Change color on hover */
+}
+
+.thankyou {
+    color: #dbdbdb;
+    gap: 10px;
+}
+.thankyou h2 {
+    font-weight: 900;
+    color: #ffd000;
+    padding-bottom: 15px;
+}
